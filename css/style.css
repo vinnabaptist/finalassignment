@@ -1,0 +1,99 @@
+body {
+     color: #000;
+     line-height: 1.4;
+     font-family: "Open Sans", sans-serif;
+}
+
+header {
+  height: 70px;
+  display: block;
+  background-color: black;
+}
+
+.headerlogo {
+  text-align: left;
+  padding-left: 30px;
+}
+
+.topnav {
+  color: white;
+  float: right;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+#container {
+  background: url(../images/gin-coverimage.jpg) no-repeat center top;
+  height: 600px;
+  background-size: cover;
+}
+
+.homelogo {
+	float: left;
+	margin: 200px 60px 0 800px;
+}
+
+.bestlist {
+  width: 160px;
+  float: right;
+  opacity: 0.4;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px 260px 0 0;
+  background-color: #e6ccff; 
+}
+
+.recipes {
+  width: 160px;
+  float: right;
+  opacity: 0.4;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 260px 0 500px;
+  background-color: #e6ccff; 
+}
+
+footer {
+  float: right;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  display: block;
+}
+
+.social-nav {
+  padding: 10px;
+  text-align: center;
+}
+
+.social-icons {
+  padding: 0 30px;
+}
+
+h1 {
+  color: #2a2a3f;
+  font-size: 35px;
+  font-weight: 500px;
+}
+
+p {
+  color: #2a2a3f;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.intro {
+  width: 50%;
+  margin: 80px 0 80px 200px;
+}
