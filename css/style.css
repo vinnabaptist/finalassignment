@@ -73,7 +73,7 @@ header {
     background: black;
 }
 
-.button {
+.home-button {
     width: 7em;
     margin: 1em 1em;
     padding: .5em 0;
@@ -85,9 +85,16 @@ header {
     background: white; 
 }
 
+.martini {
+  display: block;
+  margin: auto;
+  padding-top: 40px;
+  width: 5em;
+}
+
 h1 {
   color: white;
-  font-size: 1em;
+  font-size: .9em;
   font-style: italic;
   font-weight: 100;
   text-align: center;
@@ -108,44 +115,24 @@ header {
 
 .logo{float:left;}
 .logo img {
-    width: 250px;
-    padding: 1.1em 1em .75em;   /*17px 16px 12px */
+    width: 100%;
+    padding: 1.1em 1em .75em;  
 }
 
 nav a {
-    font-size: .9em;
-    float: right;
-    padding: 1.25em 1em; 
-    margin:1em 1.4em; 
+  color: white;
+  margin:1.6em 1em;
 }
+nav .current{color:#A9E2F3;}
 
 nav a:hover {
-  color: red;
-}
-
-.recipecontainer {
-  float:left;
-  width: 1000px;
-  margin: 80px 0 30px 200px;
+    color: #04B4AE;
 }
 
 .bottle {
   width: 100%;
 }
 
-.recipes {
-  width: 160px;
-  float: right;
-  opacity: 0.4;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  padding: 10px 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 20px 260px 0 500px;
-  background-color: white; 
-}
 
 h2 {
   color: #52527b;
@@ -156,16 +143,61 @@ h2 {
 
 h3 {
   color: #52527b;
-  font-size: 1.4em;
-  padding: 0.2em;
+  font-size: 1em;
+  padding-top: 1em;
   font-weight: 400;
 }
 
 p {
   color: #2a2a3f;
   padding: 0.5em;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 100;
+}
+
+.recipe {
+  width: 170px;
+  color:#52527b;
+  font-size: 0.6em;
+  padding: 0.5em;
+  text-align: center;
+  border-radius: 5px;
+  background: #c2d6d6;
+}
+
+.recipeContainer {
+  width: 68%;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.pic {
+  width: 30%;
+  padding: 1em .3em;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.liststyle {
+  margin-left: 1em;
+  padding: .5em;
+}
+
+li {
+  margin: 0 2em;
+  font-size: 0.6em;
+  list-style-type: disc;
+}
+
+.hidden {
+  display: none;
+}
+
+.close {
+  color: red;
+  margin: 0 0.5em;
+  font-size: 0.6em;
+  text-decoration: none;
 }
 
 .intro {
@@ -175,14 +207,16 @@ p {
 }
 
 .leftcol {
-  display: inline-block;
   width: 40%;
+  display: inline-block;
+  vertical-align: top;
   margin: 0 .5em 1em 2em;
 }
 
 .rightcol {
-  display: inline-block;
   width: 40%;
+  display: inline-block;
+  vertical-align: top;
   margin: 0 .5em 1em 2em;
 }
 
@@ -196,69 +230,79 @@ p {
   padding: 0 2em;
 }
 
-/* Hover effect for recipes*/
 
-#mainwrapper {
-  font: 10pt;
-  height: auto;
-  margin: 80px auto 0 auto;
-  text-align: center;
-  width: 70%;
+#mobile-menu {
+  background: black;
+  display: none;
 }
 
-#mainwrapper .box {
-  border: 5px solid #fff;
-  cursor: pointer;
-  height: 300px;
-  float: left;
-  margin: 5px;
-  position: relative;
-  overflow: hidden;
-  width: 300px;
-    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
-    -moz-box-shadow: 1px 1px 1px 1px #ccc;
-    box-shadow: 1px 1px 1px 1px #ccc;
+#desktop-menu {
+  display: inline;
 }
 
-#mainwrapper .box img {
-  position: absolute;
-  left: 0;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out; 
-  transition: all 300ms ease-out;
+/******************************************
+/* SIGN UP NEWSLETTER
+/*******************************************/
+
+label {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .6em;
+  margin-left: 1em;
 }
 
-#mainwrapper .box .caption {
-  background-color: rgba(0,0,0,0.8);
-  position: absolute;
-  color: #fff;
-  z-index: 100;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out; 
-    transition: all 300ms ease-out;
-  left: 0;
+.form {
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 
-#mainwrapper .box .title {
-  height: 50px;
-  width: 300px;
+.form-field {
+  width: 100%;
+  padding: 10px;
   display: block;
-  bottom: -50px;
-  line-height: 25pt;
-  text-align: center;
 }
 
-#mainwrapper .box:hover .title {
-  -moz-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  -webkit-transform: translateY(-100%);
-  opacity: 1;
-  transform: translateY(-100%);
+input[type="text"] {
+  width: 100%;
+  height: 50px;
+  margin: 4px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  padding: 10px;
 }
+
+input[type="email"] {
+  width: 100%;
+  height: 50px;
+  margin: 4px 0 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  padding: 10px;
+}
+
+.question {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .7em;
+  padding-top: 10px;
+}
+
+input[type="button"] {
+  width: 150px;
+  height: 40px;
+  margin: 20px 17px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  font-weight: 400;
+  background: #A9E2F3;
+  color: #04B4AE;
+  border-radius: 8px;
+}
+
 
 /******************************************
 /* RESPONSIVE
@@ -270,23 +314,25 @@ p {
     /* Modules */
     .content-box {
         width:96%;
-        margin: 0 auto;
+        margin: 0 auto; 
         box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
     }
     /* Layout */
 
     nav {
         clear:both;
-        height:0;
+        height:0em;
         transition:height 1s;
     }
+
     nav.open{
-        height:7.5em; 
+        height:7em;
     }
+
     nav a {
         display:block;
-        background:rgba(255,255,255,0.1);
-        margin-bottom:.25em;
+        margin: .3em .4em;
+        padding: .2em .8em;
     }
 
     /* Mobile Nav*/
@@ -322,7 +368,9 @@ p {
         top: .625em; /* 10px */
         left: 0px;
     }
-
+    #desktop-menu {
+      display: none;
+    }
 }
 
 /* Tablet/Desktop -----------------------*/
@@ -351,6 +399,9 @@ p {
         padding: 2% 3%;
         width: 33.3333%;
         box-shadow: inset -1px 0 0 rgba(0,0,0,.15);
+    }
+    #mobile-menu {
+      display: none;
     }
 }
 
