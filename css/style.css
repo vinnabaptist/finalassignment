@@ -133,10 +133,9 @@ nav a:hover {
   width: 100%;
 }
 
-
 h2 {
   color: #52527b;
-  font-size: 1.8em;
+  font-size: 1.6em;
   padding: 5px;
   font-weight: 400;
 }
@@ -151,15 +150,16 @@ h3 {
 p {
   color: #2a2a3f;
   padding: 0.5em;
-  font-size: 0.6em;
+  font-size: .8em;
   font-weight: 100;
 }
 
 .recipe {
   width: 170px;
   color:#52527b;
-  font-size: 0.6em;
+  font-size: 0.7em;
   padding: 0.5em;
+  margin-left: 0.5em;
   text-align: center;
   border-radius: 5px;
   background: #c2d6d6;
@@ -185,7 +185,7 @@ p {
 
 li {
   margin: 0 2em;
-  font-size: 0.6em;
+  font-size: 0.7em;
   list-style-type: disc;
 }
 
@@ -239,6 +239,75 @@ li {
 #desktop-menu {
   display: inline;
 }
+
+/******************************************
+/* CAROUSEL SLIDER
+/*******************************************/
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 10px auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 55em;
+  height: 500px;
+  background: white;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  color: #a3c2c2;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2em;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
 
 /******************************************
 /* SIGN UP NEWSLETTER
